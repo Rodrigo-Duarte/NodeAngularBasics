@@ -9,13 +9,10 @@
     </p>
     <div ng-controller='PessoaCtrl'>
       <p>nome: {{pessoa_.nome}}</p>
-      <p>data: {{pessoa_.data}}</p>
       <p>concat: {{pessoa_.nascidoEm.cidade + '-' + pessoa_.nascidoEm.estado}}</p>
       <p>obj: {{pessoa_.nascidoEm}}</p>
       <br/>
-      <p ng-repeat="umaPessoa in pessoas_">
-        iterando: {{umaPessoa}}
-      </p>
+      <p ng-repeat="umaPessoa in pessoas_">iterando: {{umaPessoa}}</p>
     </div>
   </body>
 </html>

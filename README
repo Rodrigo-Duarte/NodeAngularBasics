@@ -1,0 +1,16 @@
+====testes E2E
+
+instalar o test-runner 'protractor'
+$ npm install protractor
+
+instalar o selenium standalone server
+$ node_modules/protractor/bin/webdriver-manager update
+
+startar o selenium
+$ node_modules/protractor/bin/webdriver-manager start
+
+startar o servidor de aplicacao
+$ node app
+
+rodar os testes
+$ protractor e2eProtractorConfiguration.js
