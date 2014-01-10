@@ -21,6 +21,10 @@ describe('MinhaApp controllers', function() {
       expect(scope.pessoa_).toBeUndefined();
       $httpBackend.flush();
       expect(scope.pessoa_).toEqual({ nome: 'teste!', data: 'umaData', nascidoEm: {cidade: 'TestCity', estado: 'Hell'}});
+      expect(scope.pessoas_).toEqual([
+        { nome: 'teste!', data: 'umaData', nascidoEm: {cidade: 'TestCity', estado: 'Hell'}}, 
+        {nome: 'outraPessoa'}
+      ]);
     });
   });
 });

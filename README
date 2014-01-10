@@ -1,16 +1,25 @@
-====testes E2E
+====testes unitarios====
+
+instalar o karma
+$ npm install karma
+
+rodar os testes com a config
+$./node_modules/.bin/karma start karmaConfiguration.js
+
+
+====testes E2E====
 
 instalar o test-runner 'protractor'
 $ npm install protractor
 
 instalar o selenium standalone server
-$ node_modules/protractor/bin/webdriver-manager update
+$ ./node_modules/protractor/bin/webdriver-manager update
 
 startar o selenium
-$ node_modules/protractor/bin/webdriver-manager start
+$ ./node_modules/protractor/bin/webdriver-manager start
 
 startar o servidor de aplicacao
 $ node app
 
-rodar os testes
+rodar os testes com a config
 $ protractor e2eProtractorConfiguration.js
